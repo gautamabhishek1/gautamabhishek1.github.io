@@ -6,12 +6,14 @@
 
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico">
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        
         <title>Welcome</title>
     </head>
     <body>
+
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
@@ -42,17 +44,23 @@
                 <h1 class="home__title">
                     <span class='intro'></span>Hi,I'am</span><br> 
                     <span class="home__title-color">Abhishek Gautam</span><br> </h1>
+                
+                    <div id="typed-strings">
+                        <span>I'm a <h1>Web Developer</h1></span>
+                        <span>I'm a<h1>Tech Enthusiast</h1></span>
+                        <span>I'm a<h1>Quick-Learner</h1></span>
+                       </div>
+                       <div id="typed"></div>
 
-
-
-                    <a href="#contact" class="button">Contact</a>
-                </div>
+                   
+                       <div><a href="#contact" class="button">Contact</a></div>
+                    </div>
 
                 <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.linkedin.com/in/abhishek-gautam-" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
                     <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.instagram.com/abhishek__gautam_1" target="_blank" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.github.com/gautamabhishek1" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
                 </div>
 
                 <div class="home__img">    
@@ -110,7 +118,7 @@
                                 
                             </div>
                             <div>
-                                <span class="skills__percentage">70%</span>
+                                <span class="skills__percentage">60%</span>
                             </div>
                         </div>
 
@@ -139,6 +147,32 @@
                                 <span class="skills__percentage">80%</span>
                             </div>
                         </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-python skills__icon'></i> 
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__python">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">50%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-c-plus-plus skills__icon'></i> 
+                                <span class="skills__name">C++</span>
+                            </div>
+                            <div class="skills__bar skills__cpp">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
                     
                     </div>
                     
@@ -159,9 +193,9 @@
                     <div class="work__img">
                         <img src="assets/img/work2.jpg" alt="">
                     </div>
-                    <!-- <div class="work__img">
+                    <div class="work__img">
                         <img src="assets/img/work3.jpg" alt="">
-                    </div> -->
+                    </div>
                     <div class="work__img">
                         <img src="assets/img/work4.jpg" alt="">
                     </div>
@@ -179,11 +213,11 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Your Message"></textarea>
-                        <input type="button" value="SEND" class="contact__button button">
+                    <form action="" class="contact__form" name='contact'>
+                        <input type="text" placeholder="Name" class="contact__input" name='name' required>
+                        <input type="mail" placeholder="Email" class="contact__input" name='email' required>
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Your Message" required></textarea>
+                        <input type="submit" value="SEND" class="contact__button button">
                     </form>
                 </div>
             </section>
@@ -200,11 +234,22 @@
             <p>&#169; 2021 copyright all right reserved</p>
         </footer>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+   var typed = new Typed('#typed',{
+    stringsElement: '#typed-strings',
+                    backSpeed: 90,
+                    typeSpeed: 70,
+                    startDelay: 500,
+                    loop: true,
+    });
+</script>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+<!--===== SCROLL REVEAL =====-->
+<script src="https://unpkg.com/scrollreveal"></script>
+<!--===== MAIN JS =====-->
+<script src="assets/js/main.js"></script> 
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
     </body>
 </html>

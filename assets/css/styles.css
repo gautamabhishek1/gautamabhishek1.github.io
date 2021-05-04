@@ -190,6 +190,7 @@ img{
 .home{
   height: calc(100vh - 3rem);
   row-gap: 1rem;
+  /* margin-top: 70px; */
 }
 .home__data{
   align-self: center;
@@ -297,7 +298,7 @@ img{
   width: 95%;
 }
 .skills__css{
-  width: 70%;
+  width: 60%;
 }
 .skills__js{
   width: 50%;
@@ -305,8 +306,15 @@ img{
 .skills__boot{
   width: 80%;
 }
+.skills__python{
+  width: 50%;
+}
+.skills__cpp{
+  width: 70%;
+}
 .skills__img{
   border-radius: .5rem;
+  height: 300px;
 }
 
 /* ===== WORK =====*/
@@ -443,7 +451,11 @@ img{
     justify-items: center;
   }
 }
-
+@media screen and (max-width: 768px) {
+  .home__data{
+    margin-top: 50px;
+  }
+}
 @media screen and (min-width: 1024px){
   .bd-grid{
     margin-left: auto;
@@ -455,4 +467,28 @@ img{
   }
 }
 
-
+#typed {
+  display: inline-block;
+  height: 100px;
+}
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
