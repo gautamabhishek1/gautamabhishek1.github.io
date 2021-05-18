@@ -252,11 +252,13 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="index.html" class="contact__form" method='post' name='contact'>
+                    <form action="https://formspree.io/f/mrgrpoob"
+                    method="POST" class="contact__form" name='contact' id='my-form'>
                         <input type="text" placeholder="Name" class="contact__input" name='name' required>
                         <input type="mail" placeholder="Email" class="contact__input" name='email' required>
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Your Message" required></textarea>
-                        <input type="submit" value="SEND" class="contact__button button">
+                        <textarea name="Message" id="" cols="0" rows="10" class="contact__input" placeholder="Your Message" required></textarea>
+                        <input type="submit" value="SEND" class="contact__button button" id='my-form-button'>
+                        <p id="my-form-status"></p>
                     </form>
                 </div>
             </section>
@@ -282,6 +284,28 @@
                     loop: true,
     });
    
+</script>
+<script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
 </script>
 
 <!--===== SCROLL REVEAL =====-->
