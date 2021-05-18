@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<title>Doctor's Appointment Form</title>
+<link rel="stylesheet" type="text/css" href="personal info.css">
+
+
+</head>
+<body>
+<div class="regform"><h2>Patient's Details</h2></div>
+<div class="main">
+<form action="details.html" method="post">
+<p style="color:white; text-align:center;">Fill the form below to complete your appointment details.<br><br>
+<div id="name">
+<h5 class="name">Name</h5>
+<input class="firstname" type="text" name="first_name" required><br>
+<label class="firstlabel">First name</label>
+<input class="lastname" type="text" name="last_name" required>
+<label class="lastlabel">Last name</label>
+</div>
+
+<h5 class="name">Gender</h5>
+<select class="option" name="gender" required>
+<option disabled="disabled" selected="selected">--Choose Option--</option>
+<option value="Male"> Male </option>
+<option value="Female"> Female </option>
+<option value="Others"> Others </option>
+</select>
+
+<h5 class="name">Email</h5>
+<input class="email" type="text" name="email" placeholder="myname@example.com">
+
+<h5 class="name">Phone</h5>
+<input class="code" type="text" name="area_code" placeholder="+91" readonly>
+<label class="area-code">Area Code</label>
+<input class="number" type="text" name="phone" maxlength="10" required>
+<label class="phone-number">Phone Number</label>
+
+<h5 class="name"> Date of Birth</h5>
+<select class="option1" name="Day" required>
+<option disabled="disabled" selected="selected">Day</option>
+<option value="1"> 1 </option>
+<option value="2"> 2 </option>
+<option value="3"> 3 </option>
+<option value="4"> 4 </option>
+<option value="5"> 5 </option>
+<option value="6"> 6 </option>
+<option value="7"> 7 </option>
+<option value="8"> 8 </option>
+<option value="9"> 9 </option>
+<option value="10"> 10 </option>
+<option value="11"> 11 </option>
+<option value="12"> 12 </option>
+<option value="13"> 13 </option>
+<option value="14"> 14 </option>
+<option value="15"> 15 </option>
+<option value="16"> 16 </option>
+<option value="17"> 17 </option>
+<option value="18"> 18 </option>
+<option value="19"> 19 </option>
+<option value="20"> 20 </option>
+<option value="21"> 21 </option>
+<option value="22"> 22 </option>
+<option value="23"> 23 </option>
+<option value="24"> 24 </option>
+<option value="25"> 25 </option>
+<option value="26"> 26 </option>
+<option value="27"> 27 </option>
+<option value="28"> 28 </option>
+<option value="29"> 29 </option>
+<option value="30"> 30 </option>
+<option value="31"> 31 </option>
+</select>
+<select class="option2" name="month" required>
+<option disabled="disabled" selected="selected">Month</option>
+<option value="January"> January </option>
+<option value="February"> February </option>
+<option value="March"> March </option>
+<option value="April"> April </option>
+<option value="May"> May </option>
+<option value="June"> June </option>
+<option value="July"> July </option>
+<option value="August"> August </option>
+<option value="September"> September </option>
+<option value="October"> October </option>
+<option value="November"> November </option>
+<option value="December"> December </option>
+</select>
+<input class="year" type="text" name="year" placeholder="Enter year" required maxlength="4">
+
+
+<h5 class="name">Address</h5>
+<input class="streetaddress" type="text" name="streetaddress" required>
+<label class="streetlabel">Street Address</label><br>
+<input class="city" type="text" name="city" required>
+<label class="citylabel">City</label>
+<input class="postalcode" type="text" name="postalcode" maxlength="6" required>
+<label class="codelabel">Postal/Zip code</label>
+<select class="option3" name="State" required>
+<option disabled="disabled" selected="selected">--Choose State/UT--</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands (UT)</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Arunachal Pradesh ">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh (UT)</option>
+<option value="Chhatishgarh">Chhatishgarh</option>
+<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli (UT)</option>
+<option value="Daman and Diu">Daman and Diu (UT)</option>
+<option value="Delhi">Delhi (UT)</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Goa">Goa</option>
+<option value="Jammu & Kashmir">Jammu & Kashmir (UT)</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Ladakh">Ladakh (UT)</option>
+<option value="Lakshadweep">Lakshadweep (UT)</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur ">Manipur </option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Odisha">Odisha</option>
+<option value="Puducherry">Puducherry (UT)</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttarakhand">Uttarakhand</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="West Bengal">West Bengal</option>
+</select>
+
+<input type="submit" name="next" value="Next">
+</form>
+</div>
+</body>
+</html>

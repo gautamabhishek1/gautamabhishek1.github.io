@@ -1,0 +1,85 @@
+body{
+background-image:url("revb.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+}
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+background-color:azure;
+overflow:hidden;
+box-shadow:2px 2px 2px 2px rgba(0,0,13,0.4);
+border-radius:2px;
+}
+li{
+display:inline;
+float:left;
+}
+li a{
+display:block;
+color:grey;
+text-decoration:none;
+text-align:center;
+padding: 14px 16px;
+}
+li a:hover{
+background-color:ghostwhite;
+color:rgb(34,81,255);
+}
+.active{
+background-color:ghostwhite;
+color:rgb(34,81,255);
+}
+input[type=text],
+input[type=number]{
+border:none;
+border-bottom:1px solid black;
+display: block;
+box-sizing: border-box;
+color:black;
+width:250px;
+background:none;
+}
+textarea{
+border:none;
+border-bottom:1px solid black;
+color:black;
+font-family: 'Roboto', sans-serif;
+background:none;
+}
+textarea:focus{
+outline:none;
+border-bottom:1px solid blue;
+}
+input[type=text]:focus,
+input[type=number]:focus{
+outline:none;
+border-bottom:1px solid blue;
+}
+input[type=submit]{
+background-color:blue;
+width:250px;
+border:none;
+border-radius:4px;
+color:white;
+height:25px;
+font-size:20px;
+box-shadow:3px 3px 3px 3px rgba(0,0,13,0.5);
+}
+input[type=submit]:focus{
+outline:none;
+}
+input[type=submit]:hover{
+opacity:0.7;
+}
+input[type=submit]:active{
+opacity:0.7;
+}
+#bg{
+background-image:url("ppr.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}

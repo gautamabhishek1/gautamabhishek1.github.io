@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Review Site</title>
+<link rel="stylesheet" type="text/css" href="review.css">
+<script>
+function feedback()
+{
+	alert("Thank You for your valuable feedback. We will reach back to you shortly.");
+}
+
+</script>
+
+</head>
+<body>
+<ul>
+<li><a href="Home.html"><h3>Home</h3></a></li>
+<li><a href="personal info.html"><h3>Appointment</h3></a></li>
+<li><a href="../landing.html"><h3>Logout</h3></a></li>
+<li><a href="#contact"><h3>Contact</h3></a></li>
+<li><a href="review.html" class="active"><h3>Feedback</h3></a></li>
+</ul><br>
+<div style="height:450px;border-radius:5px;box-shadow:15px 15px 15px 15px rgba(0,0,13,0.5);width:700px;padding:50px;padding-left:100px;margin:0px auto 0px auto;" id="bg">
+<img src="emoji.png" width="250px" style="position:absolute;top:500px;left:130px;">
+<img src="emj.png" width="480px" style="position:absolute;top:440px;left:1050px;">
+<form onsubmit="feedback();">
+<table width="100%" style="color:white;height:350px;font-size:20px;">
+<tr>
+<td><i>Name:</i></td><td><input type="text" placeholder="Enter Name" required></td>
+</tr>
+<tr>
+<td><i>Email:</i></td><td><input type="text" placeholder="Enter mail Id" required></td>
+</tr>
+<tr>
+<td><i>Phone No.:</i></td><td><input type="text" placeholder="+91" maxlength="10" required ></td>
+</tr>
+<tr>
+<td><i>Feedback:</i></td><td><textarea rows="5" cols="50" placeholder="Enter Feedback" required></textarea></td>
+</tr>
+</table><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" value="Submit" id="submit" >
+</form>
+</div><br><br>
+<div>
+<div style="width:100%;height:300px;background-color:rgb(34,81,255);border-radius:3px;box-shadow:2px 2px 2px 2px rgba(0,0,13,0.4);">
+<table width="100%" style="padding-left:20px;">
+<tr>
+<td>
+<h3 style="color:white;" id="contact">Contact Info:</h3>
+<table width="100%" height="200px" style="color:gainsboro;font-size:20px;">
+<tr style="border-bottom:1px solid gainsboro;">
+<td style="border-bottom:1px solid gainsboro;">Company name:</td><td style="border-bottom:1px solid gainsboro;">MEDCARE L.T.D</td>
+</tr>
+<tr style="border-bottom:1px solid gainsboro;">
+<td style="border-bottom:1px solid gainsboro;">Phone:</td><td style="border-bottom:1px solid gainsboro;">+91xxxxxxxxxx</td>
+</tr>
+<tr style="border-bottom:1px solid gainsboro;">
+<td style="border-bottom:1px solid gainsboro;">Email:</td><td style="border-bottom:1px solid gainsboro;"><a href="mailto:abcd@company.com" style="text-decoration:none;color:gainsboro;">info@medcare.com</td>
+</tr>
+<tr style="border-bottom:1px solid gainsboro;">
+<td style="border-bottom:1px solid gainsboro;">Office address:</td><td style="border-bottom:1px solid gainsboro;">ABC road,<br>def area,<br>New Delhi</td>
+</tr>
+</table></td><td>
+<table style="color:gainsboro;"><tr>
+<td style="padding-left:150px;font-size:20px;">
+For any queries or issues please mail us<br> or just write it in the review page in the<br> navigation bar.We will make sure to reach you<br>through mail or any other means.
+</td>
+</tr>
+</table>
+</td>
+<td style="padding-top:40px;">
+<img src="book.gif" width="150px" height="220px" style="border: 1px groove grey;border-radius:10px;box-shadow:15px 15px 15px 15px rgba(0,0,13,0.4)">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
