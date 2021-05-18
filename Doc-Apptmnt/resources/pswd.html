@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<title>Reset Password</title>
+<link rel="stylesheet" href="pswd.css">
+
+<script>
+function alertBox()
+{
+	alert("Password reset link has been sent to your email");
+}
+</script>
+
+</head>
+<body>
+
+<div id="login-box">
+  <div class="left">
+    <h2>Enter your registered email:</h2>
+	<p>(A link will be sent on this email to reset your password)</p>
+    <form onsubmit="alertBox();">
+    <input type="text" name="email" placeholder="E-mail" required />
+    <input type="submit" name="signup_submit" value="Submit" />
+	</form>
+	<a href="login.html"><button class="back">Back</button></a>
+
+  </div>
+  
+</body> 
+</html> 

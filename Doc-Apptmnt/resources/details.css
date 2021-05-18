@@ -1,0 +1,173 @@
+*{
+margin:0;
+padding:0;
+}
+body{
+background-image:url('ABCD.jpg');
+background-position:center;
+background-size:cover;
+margin-top:40px;
+}
+.regform{
+width:800px;
+background-color:rgb(0,0,0,0.6);
+margin:auto;
+font-family:verdana;
+color:#FFFFFF;
+padding:10px 0 px 10 px 0 px;
+text-align:center;
+border-radius:15px 15px 0px 0px;
+}
+.main{
+background-color:rgb(0,0,0,0.5);
+width:800px;
+margin:auto;
+}
+form{
+padding:10px;
+}
+.name1{
+margin-left:25px;
+margin-top:35px;
+width:325px;
+font-family:times;
+color:white;
+font-size:20px;
+font-weight:700;
+}
+.option1{
+position:relative;
+left:320px;
+top:-30px;
+line-height:40px;
+width:432px;
+height:35px;
+border-radius:6px;
+padding:0 22px;
+font-size:20 px;
+color:#555;
+outline:none;
+overflow:hidden;
+}
+.location {
+	
+	width: 100px;
+	margin-left:25px;
+margin-top:40px;
+width:225px;
+color:white;
+font-size:20px;
+font-weight:700;
+}
+
+#patient{
+margin-left:25px;
+color:white;
+font-size:20px;
+font-family:times;
+}
+.radio{
+display:inline-block;
+padding-right:70px;
+font-size:20px;
+margin-left:25px;
+color:white;
+}
+.radio input{
+width:10px;
+height:20px;
+border-radius:50%;
+cursor:pointer;
+outline:none;
+}
+#yesorno{
+margin-left:25px;
+margin-top:30px;
+color:white;
+font-size:20px;
+}
+.name2{
+margin-left:25px;
+margin-top:30px;
+width:525px;
+font-family:times;
+color:white;
+font-size:20px;
+font-weight:700;
+}
+.answer{
+position:relative;
+left:20px;
+top:7px;
+line-height:40px;
+width:662px;
+height:60px;
+border-radius:6px;
+padding:0 22px;
+font-size:16 px;
+color:#555;
+}
+.name3{
+margin-left:25px;
+margin-top:40px;
+width:225px;
+color:white;
+font-size:20px;
+font-weight:700;
+}
+.option2{
+position:relative;
+left:320px;
+top:-30px;
+line-height:40px;
+width:432px;
+height:35px;
+border-radius:6px;
+padding:0 22px;
+font-size:20 px;
+color:#555;
+outline:none;
+overflow:hidden;
+}
+.name{
+margin-left:25px;
+margin-top:30px;
+width:425px;
+color:white;
+font-size:20px;
+font-weight:700;
+}
+.option3{
+position:relative;
+left:320px;
+top:-30px;
+line-height:40px;
+width:432px;
+height:35px;
+border-radius:6px;
+padding:0 22px;
+font-size:20 px;
+color:#555;
+outline:none;
+overflow:hidden;
+}
+.option option{
+font-size:25px;
+}
+.button{
+background-color:#3BAF9F;
+margin:50px 0px 0px 20px;
+text-align:center;
+border-radius:12px;
+border:2px solid #366473;
+padding:14px 110px;
+outline:none;
+color:white;
+cursor:pointer;
+transition:0.25px;
+}
+
+
+.button:hover{
+background-color:#5390F5;
+}

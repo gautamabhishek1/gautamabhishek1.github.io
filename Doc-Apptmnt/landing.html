@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<title>Welcome to MEDCARE</title>
+<link rel="stylesheet" type="text/css" href="./resources/landing.css">
+
+<script>
+function alertBox()
+{
+	alert("Account has been created successfully. Login to continue");
+}
+function checkPswd()
+{
+	var password = document.getElementById("pswd1").value;
+        var confirmPassword = document.getElementById("pswd2").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+}
+
+
+</script>
+
+</head>
+<body> 
+<div id="head">
+<p><span style="font-size:30px">Welcome to</span> <strong>MEDCARE</strong><p>
+</div>
+<div id="login-box">
+  <div class="left">
+    <h1>Sign up</h1>
+    <form action ="./resources/login.html" method="post" onsubmit="alertBox();">
+    <input id="usr" type="text" name="username" placeholder="Username" required />
+    <input id="email" type="text" name="email" placeholder="E-mail" required />
+    <input id="pswd1" type="password" name="password" placeholder="Password" pattern=".{8,12}" required />
+	<span class="tip">
+	<p>*Password length should be between 8 to 12 characters</p></span>
+    <input id="pswd2" type="password" name="password2" placeholder="Retype password" required />
+    <input type="submit" name="signup_submit" value="Sign me up" onclick="return checkPswd()" />
+	</form>
+  </div>
+  
+  <div class="right">
+    <span class="new"><h1>Already Registered</h1><br/></span>
+    
+    <button class="signin" onclick="document.location='./resources/login.html'">SIGN IN TO MEDCARE</button>
+  </div>
+  <div class="or">OR</div>
+</div>   
+</body> 
+
+</html> 

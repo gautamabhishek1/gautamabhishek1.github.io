@@ -1,0 +1,344 @@
+<html>
+<head>
+<title>gateway</title>
+<link rel="stylesheet" type="text/css" href="gateway.css">
+<script type="text/javascript">
+var modal = document.getElementById('id01');
+var modal2=document.getElementById('id02');
+var modal3=document.getElementById('id03');
+window.onclick = function(event) {
+    if (event.target == (modal || modal2 )) {
+        modal.style.display = "none";
+    }
+window.onclick = function(event) {
+    if (event.target == modal3) {
+        modal.style.display = "none";
+    }
+
+function confirm() 
+{
+	alert("Your Appointment details has been sent to your registered email");
+}
+</script
+</head>
+
+<body >
+<div style="postion:center; font-size:40px; position:relative; left:-35%;font-family:sans-serif; color:f44336; ">Select Payment Method
+<br><br>
+
+<button  onclick="document.getElementById('id01').style.display='block'" style="width:400px">Debit Card</button><br>
+<button  onclick="document.getElementById('id01').style.display='block'" style="width:400px;">Credit Card</button><br>
+<button  onclick="document.getElementById('id02').style.display='block'" style="width:400px;">Netbanking</button><br>
+<button  onclick="document.getElementById('id07').style.display='block'" style="width:400px;">e-Wallet</button>
+</div>
+<div id="id01" class="modal" for="debit and credit" >
+  
+  <form class="modal-content animate" onsubmit="confirm()">
+ >
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="cardlogo.png"  class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="cardnum"><b>16 Digit Card Number</b></label><br>
+      <input type="tel" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="16" name="cardnum" required><br>
+	
+      <label for="month"><b>Date of Expiry</b></label><br>
+      <input type="month"  name="dofexp" required><br>
+	   <label for="cname"><b>Card Holder Name</b></label><br>
+      <input type="text"  name="cname" required maxlength="20" placeholder="Name on Card"/><br>
+	  <label for="cvv"><b>CVV</b></label><br>
+      <input type="tel"  name="cvv" maxlength="3" required placeholder="CVV"/><br>
+	  
+        
+      <button type="submit" style="background-color:#f44336">Go for Payment</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Save card for future transactions
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+<div id="id02" class="modal2" for="netbank" style="text-align:center;">
+  
+  <form class="modal-content animate" onsubmit="confirm()">
+ >
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container" >
+     
+        
+      <input type="button" onclick="document.getElementById('id03').style.display='block'"><img src="sbilogo.jfif"><br>
+	  <input type="button" onclick="document.getElementById('id04').style.display='block'"><img src="icicilogo.png"><br>
+	  <input type="button" onclick="document.getElementById('id05').style.display='block'"><img src="hdfclogo.png" ><br>
+	  <input type="button" onclick="document.getElementById('id06').style.display='block'"><img src="axislogo.png" style="width:300px; height:150px;"><br>
+      
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+<div id="id03" class="modal3" for="netbank sbi">
+  
+  <form class="modal-content animate" onsubmit="confirm()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="sbilogo.jfif"  class="avatar">
+    </div>
+
+    <div class="container" style="text-align:center;">
+
+        <label for="uname"><b>Username</b></label><br>
+      <input type="text"  name="uname" required maxlength="20" placeholder="Username"/><br>
+	  <label for="pswd"><b>Password</b></label><br>
+      <input type="password"  name="pswd" maxlength="20" required placeholder="xxxxxxxx"/><br>
+	  
+      <button type="submit" style="background-color:#f44336">Go for Payment</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+<div id="id04" class="modal3" for="netbank icici">
+  
+  <form class="modal-content animate" onsubmit="confirm()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="icicilogo.png"  class="avatar">
+    </div>
+
+    <div class="container" style="text-align:center;">
+
+
+        <label for="uname"><b>Username</b></label><br>
+      <input type="text"  name="uname" required maxlength="20" placeholder="Username"/><br>
+	  <label for="pswd"><b>Password</b></label><br>
+      <input type="text"  name="pswd" maxlength="20" required placeholder="xxxxxxxx"/><br>
+	  
+      <button type="submit" style="background-color:#f44336">Go for Payment</button>
+      <label>
+        <input type="checkbox"  checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+<div id="id05" class="modal3" for="netbank hdfc">
+  
+  <form class="modal-content animate" onsubmit="confirm()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="hdfclogo.png"  class="avatar">
+    </div>
+
+    <div class="container" style="text-align:center;">
+      
+        <label for="uname"><b>Username</b></label><br>
+      <input type="text"  name="uname" required maxlength="20" placeholder="Username"/><br>
+	  <label for="pswd"><b>Password</b></label><br>
+      <input type="text"  name="pswd" maxlength="20" required placeholder="xxxxxxxx"/><br>
+	  
+      <button type="submit" style="background-color:#f44336">Go for Payment</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id05').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+<div id="id06" class="modal3" for="netbank axis">
+  
+  <form class="modal-content animate" onsubmit="confirm()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id06').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="axislogo.png"  class="avatar">
+    </div>
+
+    <div class="container" style="text-align:center;">
+      
+        <label for="uname"><b>Username</b></label><br>
+      <input type="text"  name="uname" required maxlength="20" placeholder="Username"/><br>
+	  <label for="pswd"><b>Password</b></label><br>
+      <input type="text"  name="pswd" maxlength="20" required placeholder="xxxxxxxx"/><br>
+	  
+      <button type="submit" style="background-color:#f44336">Go for Payment</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id06').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+<div id="id07" class="modal3" for="ewallet" style="text-align:center;">
+  
+  <form class="modal-content animate" onsubmit="confirm()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id07').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container" >
+     
+        
+      <input type="button" onclick="document.getElementById('id08').style.display='block'"/><img src="paytmlogo.png" ><br>
+	  <input type="button" onclick="document.getElementById('id09').style.display='block'"><img src="gpaylogo.png"><br>
+	  <input type="button" onclick="document.getElementById('id10').style.display='block'"><img src="phonepelogo.png" ><br>
+	  <input type="button" onclick="document.getElementById('id11').style.display='block'"><img src="bhimlogo.jfif" style="width:200px;"><br>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id07').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+
+<div id="id08" class="modal3" for="ewallet paytm" onsubmit="confirm()">
+  
+  <form class="modal-content animate" >
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id08').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="paytmlogo.png"  class="avatar">
+    </div>
+
+    <div class="container" style="text-align:center;">
+      
+        <label for="uname"><b>Username</b></label><br>
+      <input type="text"  name="uname" required maxlength="20" placeholder="Username"/><br>
+	  <label for="upiid"><b>UPI ID</b></label><br>
+	  <input type="text" name="upiid" required maxlength="20" placeholder="upi id"/><br>
+	  <label for="pswd"><b>Password</b></label><br>
+      <input type="text"  name="pswd" maxlength="20" required placeholder="xxxxxxxx"/><br>
+	  
+      <button type="submit" style="background-color:#f44336">Go for Payment</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id08').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+<div id="id09" class="modal3" for="ewallet gpay">
+  
+  <form class="modal-content animate" onsubmit="confirm()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id09').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="gpaylogo.png"  class="avatar">
+    </div>
+
+    <div class="container" style="text-align:center;">
+      
+        <label for="uname"><b>Username</b></label><br>
+      <input type="text"  name="uname" required maxlength="20" placeholder="Username"/><br>
+	  <label for="upiid"><b>UPI ID</b></label><br>
+	  <input type="text" name="upiid" required maxlength="20" placeholder="upi id"/><br>
+	  <label for="pswd"><b>Password</b></label><br>
+      <input type="text"  name="pswd" maxlength="20" required placeholder="xxxxxxxx"/><br>
+	  
+      <button type="submit" style="background-color:#f44336">Go for Payment</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id09').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+<div id="id10" class="modal3" for="ewallet phonepe">
+  
+  <form class="modal-content animate" onsubmit="confirm()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id10').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="phonepelogo.png"  class="avatar">
+    </div>
+
+    <div class="container" style="text-align:center;">
+      
+        <label for="uname"><b>Username</b></label><br>
+      <input type="text"  name="uname" required maxlength="20" placeholder="Username"/><br>
+	  <label for="upiid"><b>UPI ID</b></label><br>
+	  <input type="text" name="upiid" required maxlength="20" placeholder="upi id"/><br>
+	  <label for="pswd"><b>Password</b></label><br>
+      <input type="text"  name="pswd" maxlength="20" required placeholder="xxxxxxxx"/><br>
+	  
+      <button type="submit" style="background-color:#f44336">Go for Payment</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id10').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+<div id="id11" class="modal3" for="ewallet bhim">
+  
+  <form class="modal-content animate" onsubmit="confirm()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id11').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="bhimlogo.jfif"  class="avatar">
+    </div>
+
+    <div class="container" style="text-align:center;">
+      
+        <label for="uname"><b>Username</b></label><br>
+      <input type="text"  name="uname" required maxlength="20" placeholder="Username"/><br>
+	  <label for="upiid"><b>UPI ID</b></label><br>
+	  <input type="text" name="upiid" required maxlength="20" placeholder="upi id"/><br>
+	  <label for="pswd"><b>Password</b></label><br>
+      <input type="text"  name="pswd" maxlength="20" required placeholder="xxxxxxxx"/><br>
+	  
+      <button type="submit" style="background-color:#f44336">Go for Payment</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id11').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
+

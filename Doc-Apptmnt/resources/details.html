@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<title>Medical Details</title>
+<link rel="stylesheet" type="text/css" href="details.css">
+<script>
+function confirm()
+{
+	alert("Complete you payment to confirm the appointment details. Redirecting to payment page...");
+}
+
+</script>
+
+</head>
+
+<body>
+<div class="regform"><h1>CONSULTATION FORM</h1></div>
+<div class="main">
+<form onsubmit="confirm()" action="gateway.html" method="post" >
+<h3 class="name1">Suitable time for appointment</h3>
+<select class="option1" name="Suitable time for appointment" required>
+<option disabled="disabled" selected="selected">--Choose Option--</option>
+<option>Morning</option>
+<option>Afternoon</option>
+<option>Evening</option>
+</select>
+
+<h5 id="patient">I would like to (choose one)*</h5>
+<label class="radio">
+<input class="radio-one" type="radio" name="facility" required>
+<span class="checkmark"></span>
+A New Patient Appointment
+</label>
+<label class="radio">
+<input class="radio-two" type="radio" name="facility">
+<span class="checkmark"></span>
+A Routine Check-up
+</label>
+<label class="radio">
+<input class="radio-three" type="radio" name="facility">
+<span class="checkmark"></span>
+A Comprehensive Health Exam
+</label>
+
+<h5 class="location">Preferred location of Hospital</h5>
+<input class="option2" type="text" name="" value="" placeholder="City/State" style="width:325px" />
+
+<h5 class="name3">Select Hospital</h5>
+<select class="option2" name="hospital">
+<option selected="selected">--Hospitals Nearby--</options>
+<option>PH HOSPITAL</option>
+<option>XYZ HOSPITAL</option>
+<option>Neelam HOSPITAL</option>
+<option>AA HOSPITAL</option>
+</select>
+
+<h5 class="name3">Required Specialist</h5>
+<select class="option2" name="required specialist" >
+<option disabled="disabled" selected="selected">--Choose Option--</option>
+<option>SEXOLOGIST</option>
+<option>GASTROENTEROLOGIST</option>
+<option>UROLOGIST</option>
+<option>SPINE SURGEON</option>
+<option>EYE SPECIALIST</option>
+<option>GYNAECOLOGIST</option>
+<option>CARDIOLOGIST</option>
+<option>ORTHOPEDIC</option>
+<option>DENTIST</option>
+<option>ENT</option>
+<option>MEDICINE</option>
+<option>DIABETOLOGIST</option>
+<option>CHILD SPECIALIST</option>
+<option>SURGEON</option>
+<option>DERMATOLOGIST (SKIN)</option>
+<option>PSYCHIATRIST</option>
+<option>HOMEOPATHY</option>
+<option>PAEDIA NEPHROLOGIST</option>
+<option>RHEUMATOLOGIST</option>
+<option>NEUROSURGEON</option>
+<option>NEUROLOGIST</option>
+<option>NEPHROLOGIST</option>
+<option>ONCOLOGIST</option>
+<option>PULMONOLOGIST</option>
+</select>
+
+<h5 class="name">Health Checkup and<br>screening for</h5>
+<select class="option3" name="health checkup and screening for" required>
+<option disabled="disabled" selected="selected">--Choose Option--</option>
+<option>DIABETES</option>
+<option>CANCER</option>
+<option>SKIN</option>
+<option>KIDNEY</option>
+<option>DIGESTION</option>
+<option>SEXUAL WELLNESS</option>
+<option>BONE</option>
+<option>FEVER</option>
+<option>BLOOD TEST</option>
+<option>PREGNANCY TEST</option>
+<option>LIVER PROFILE</option>
+<option>THYROID PROFILE</option>
+<option>BLOOD SUGAR</option>
+</select>
+
+<h5 id="yesorno">Have you previously attended our facility?</h5>
+<label class="radio">
+<input class="radio-one" type="radio" name="choice">
+<span class="checkmark"></span>
+Yes
+</label>
+<label class="radio">
+<input class="radio-one" type="radio" name="choice">
+<span class="checkmark"></span>
+No
+</label>
+
+<h5 class="name2">If yes, state on which condition and why?</h5>
+<input class="answer" type="text" name="answer" required>
+
+<input class="button" type="submit" name="submit" value="Confirm"></form>
+</div>
+</body>
+</html>
