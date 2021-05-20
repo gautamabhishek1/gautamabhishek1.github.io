@@ -238,6 +238,10 @@ img{
   box-shadow: 0 10px 36px rgba(0,0,0,.15);
 }
 
+#submit-button:active {
+  background-color: rgb(0, 183, 255);
+}
+
 /* ===== ABOUT =====*/
 .about__container{
   row-gap: 2rem;
@@ -379,11 +383,9 @@ img{
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+  transition: all 0.2s ease;
 }
 
-/* #form-status {
-
-} */
 
 /* ===== FOOTER =====*/
 .footer{
