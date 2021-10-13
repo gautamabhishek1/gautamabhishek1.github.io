@@ -2,9 +2,10 @@
 <html> 
 <head>
 <title>Welcome to MEDCARE</title>
-<link rel="stylesheet" type="text/css" href="./resources/landing.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/landing.css">
 
 <script>
+
 function alertBox()
 {
 	alert("Account has been created successfully. Login to continue");
@@ -20,7 +21,6 @@ function checkPswd()
         return true;
 }
 
-
 </script>
 
 </head>
@@ -31,7 +31,7 @@ function checkPswd()
 <div id="login-box">
   <div class="left">
     <h1>Sign up</h1>
-    <form action ="./resources/login.html" onsubmit="alertBox();">
+    <form action ="./assets/login.html" onsubmit="alertBox();">
     <input id="usr" type="text" name="username" placeholder="Username" required />
     <input id="email" type="text" name="email" placeholder="E-mail" required />
     <input id="pswd1" type="password" name="password" placeholder="Password" pattern=".{8,12}" required />
@@ -45,7 +45,7 @@ function checkPswd()
   <div class="right">
     <span class="new"><h1>Already Registered</h1><br/></span>
     
-    <button class="signin" onclick="document.location='./resources/login.html'">SIGN IN TO MEDCARE</button>
+    <button class="signin" onclick="document.location='./assets/login.html'">SIGN IN TO MEDCARE</button>
   </div>
   <div class="or">OR</div>
 </div>   

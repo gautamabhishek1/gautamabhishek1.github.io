@@ -3,7 +3,7 @@ margin:0;
 padding:0;
 }
 body{
-background-image:url('ABCD.jpg');
+background-image:url('../images/ABCD.jpg');
 background-position:center;
 background-size:cover;
 margin-top:40px;
