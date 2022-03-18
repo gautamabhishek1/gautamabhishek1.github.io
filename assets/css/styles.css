@@ -313,6 +313,9 @@ img{
 .skills__cpp{
   width: 70%;
 }
+.skills__java{
+  width: 80%;
+}
 .skills__img{
   border-radius: .5rem;
   height: 300px;
